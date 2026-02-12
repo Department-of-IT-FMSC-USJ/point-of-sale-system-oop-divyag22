@@ -30,13 +30,13 @@ class Invoice:
 class POSSystem:
     def __init__(self):
         self.products = [
-            Product(1, "Laptop", 1000, 10),
-            Product(2, "Mouse", 25, 50),
-            Product(3, "Keyboard", 80, 30)
+            Product(1, "Laptop", 10, 20),
+            Product(2, "Mouse", 2, 20),
+            Product(3, "Keyboard", 6, 30)
         ]
         self.customers = [
-            Customer(1, "John", "555-1234"),
-            Customer(2, "Jane", "555-5678")
+            Customer(1, "Namal", "111-1234"),
+            Customer(2, "Amal", "111-5678")
         ]
         self.invoices = []
         self.payments = []  # Payment history
@@ -174,7 +174,7 @@ def main():
         print("6. Process Payment")
         print("7. Show Payment History")
         print("8. Exit")
-        print("="*40)
+        print("="*60)
         
         choice = input("\nEnter choice (1-8): ")
         
@@ -199,4 +199,5 @@ def main():
             print("Invalid choice!")
 
 if __name__ == "__main__":
+
     main()
